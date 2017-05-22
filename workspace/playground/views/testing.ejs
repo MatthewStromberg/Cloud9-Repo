@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		<%= title %>
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+	<link rel='stylesheet' href='/stylesheets/testing.css' />
+</head>
+
+<body ng-app="MyApp" >
+	<h1 style="font-size: 40px; color: green;">Tesdting.ejs text</h1>
+	<div ng-controller="MainController">
+		<form ng-submit="submitPage()">
+		<input ng-model="operand1" id="op1" placeholder="Operand 1"></input>
+		<input ng-model="operator" id="oper" placeholder="Operator"></input>
+		<input ng-model="operand2" id="op2" placeholder="Operand 2"></input>
+        <button type="submit">Submit</button>
+		<input id="value" ng-model="answer" disabled></input>
+		</form>
+	</div>
+	
+	
+	
+	<script src="/javascripts/app.js"></script>
+    <script src="/javascripts/MainController.js"></script>
+    <script src="/javascripts/TestController.js"></script>
+    <script src="/javascripts/RouteProvider.js"></script>
+    <script src="/javascripts/Service.js"></script>
+</body>
+
+</html>
